@@ -1,4 +1,20 @@
 function hasTargetSum(array, target) {
+  array.sort();
+  for(let i = 0; i <= array.length-2; i++){
+	  
+	  for(let j = i+1; j<= array.length; j++){
+		  
+		  if((array[i] + array[j])== target){
+			  return true
+		  }else{
+			  return false
+		  }
+	  }
+    
+	
+  }
+
+
   // Write your algorithm here
 }
 
